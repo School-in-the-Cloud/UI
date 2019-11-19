@@ -23,10 +23,47 @@ nav {
 .heroContainer {
     // border: 3px solid red;
     // height: 20rem;
-
+    // padding-top: 4%;
     img {
         // border: 3px solid pink;
         max-width:100%;
         max-height:100%;
     }
 }
+
+header {
+    // border: 3px solid red;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        // border: 3px solid green;
+        font-size: 1.5rem;
+        padding: 0px;
+    }
+
+    hr {
+        border-top: 0.2rem black solid;
+    }
+}
+
+.content {
+    padding-left: 4%;
+    padding-right: 4%;
+
+    article {
+        .flex-container(center, center);
+
+        div {
+            min-width: 25%;
+        }
+    }
+
+    #oddArticle {
+        flex-direction: row-reverse;
+    }
+}
+

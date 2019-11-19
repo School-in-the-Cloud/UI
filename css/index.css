@@ -187,3 +187,32 @@ nav .loginButton {
   max-width: 100%;
   max-height: 100%;
 }
+header {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+header h2 {
+  font-size: 2rem;
+}
+header p {
+  font-size: 1.5rem;
+  padding: 0px;
+}
+header hr {
+  border-top: 0.2rem black solid;
+}
+.content {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.content article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content article div {
+  min-width: 25%;
+}
+.content #oddArticle {
+  flex-direction: row-reverse;
+}
