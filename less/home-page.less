@@ -3,13 +3,23 @@ nav {
 
     background-color: blueviolet;
     
-    .logoContainer img {
-        width: 100%;
+
+
+    .logoContainer {
+        // border: 3px red solid;
+        max-width: 5rem;
+        padding: .5rem;
+        img {
+            flex-shrink: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
     }
 
     .loginButton {
         padding: 10px;
         border: 2px black solid;
         border-radius: 5px;
+        background: white;
     }
 }
