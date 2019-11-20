@@ -32,6 +32,10 @@ nav {
     }
 }
 
+hr {
+    border-top: 0.2rem black solid;
+}
+
 header {
     // border: 3px solid red;
     padding-top: 4%;
@@ -46,25 +50,62 @@ header {
         padding: 0px;
     }
 
-    hr {
-        border-top: 0.2rem black solid;
-    }
+    
 }
 
 .content {
     padding-left: 4%;
     padding-right: 4%;
-
+    margin-bottom: 4%;
     article {
         .flex-container(center, center);
-
+        margin-bottom: 2%;
         div {
-            min-width: 25%;
+           h3 {
+            //    border: 3px orange solid;
+               font-size: 1.8rem;
+               margin-bottom: 2%;
+           }
+           p {
+               font-size: 1.25rem;
+           }
         }
+
+        .contentImgContainer {
+            max-width: 25%;
+            padding-left: 2%;
+        }
+
+        
     }
 
     #oddArticle {
         flex-direction: row-reverse;
+        .contentImgContainer {
+            padding-left: 0;
+            padding-right: 2%;
+        }
+    }
+}
+
+footer {
+    // border: 3px solid red;
+    margin-top: 3%;
+    div {
+        padding-bottom: 3%;
+        h3 {
+            font-size: 2rem;
+            padding-bottom: 1%;
+        }
+
+        p {
+            font-size: 1.5rem;
+            padding-bottom: 0;
+        }
+    }
+
+    .copyright {
+        text-align: center;
     }
 }
 
