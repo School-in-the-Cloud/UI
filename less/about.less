@@ -6,20 +6,35 @@
         color: white;
         font-size: 1vw;
         padding: 3%;
+
+        @media @mobile {
+            font-size: 4vw;
+            padding: 10%;
+        }
     }
 
     .aboutInfosContainer {
         .flex-container(space-evenly, center);
+        // border: 2px red solid;
+
+        @media @mobile {
+            flex-wrap: wrap;
+        }
 
         .aboutPerson {
+            // border: 2px orange solid;
             
             .flex-container(center, center);
             flex-direction: column;
             background-color: white;
             width: 15%;
             border-radius: 5px;
-
             padding-bottom: 3%;
+
+            @media @mobile {
+                width: 40%;
+                margin-top: 4%;       
+            }
 
             .aboutImgContainer {
                 width: 80%;

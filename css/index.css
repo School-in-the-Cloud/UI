@@ -316,10 +316,21 @@ body {
   font-size: 1vw;
   padding: 3%;
 }
+@media (max-width: 500px) {
+  .aboutContent span {
+    font-size: 4vw;
+    padding: 10%;
+  }
+}
 .aboutContent .aboutInfosContainer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .aboutContent .aboutInfosContainer {
+    flex-wrap: wrap;
+  }
 }
 .aboutContent .aboutInfosContainer .aboutPerson {
   display: flex;
@@ -330,6 +341,12 @@ body {
   width: 15%;
   border-radius: 5px;
   padding-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .aboutContent .aboutInfosContainer .aboutPerson {
+    width: 40%;
+    margin-top: 4%;
+  }
 }
 .aboutContent .aboutInfosContainer .aboutPerson .aboutImgContainer {
   width: 80%;
