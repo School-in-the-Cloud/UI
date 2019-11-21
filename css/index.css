@@ -350,6 +350,7 @@ body {
 }
 .aboutContent .aboutInfosContainer .aboutPerson .aboutImgContainer {
   width: 80%;
+  margin: 0 auto;
 }
 .aboutContent .aboutInfosContainer .aboutPerson .aboutImgContainer img {
   min-width: 100%;
@@ -387,12 +388,15 @@ body {
 }
 .aboutContent .aboutInfosContainer .aboutPerson div a {
   text-decoration: none;
+}
+.aboutContent .aboutInfosContainer .aboutPerson div .emailA {
+  text-decoration: none;
   color: black;
   border: 1px solid black;
   padding: 5px 9px;
   border-radius: 10px;
 }
-.aboutContent .aboutInfosContainer .aboutPerson div a:hover {
+.aboutContent .aboutInfosContainer .aboutPerson div .emailA:hover {
   background-color: black;
   color: white;
   border: 1px solid white;
