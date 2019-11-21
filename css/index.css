@@ -134,7 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Special Elite', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Special Elite', cursive;
 }
 h1 {
   font-size: 4rem;
@@ -173,7 +180,7 @@ body {
 }
 @media (max-width: 500px) {
   .container {
-    max-width: auto;
+    max-width: 500px;
   }
 }
 .introContent {
@@ -187,6 +194,11 @@ body {
   align-items: center;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .introContent .mainContentWrapper {
+    flex-direction: column-reverse;
+  }
+}
 .introContent .mainContentWrapper .imgContainer {
   width: 50%;
 }
@@ -196,6 +208,11 @@ body {
   align-items: center;
   flex-direction: column;
   width: 30%;
+}
+@media (max-width: 500px) {
+  .introContent .mainContentWrapper .intoTextWrapper {
+    width: 50%;
+  }
 }
 .introContent .mainContentWrapper .intoTextWrapper .signUp {
   margin-top: 2%;
@@ -212,11 +229,22 @@ body {
   color: white;
   background-color: darkmagenta;
 }
+@media (max-width: 500px) {
+  .introContent .mainContentWrapper .intoTextWrapper .signUp {
+    width: 30%;
+    font-size: 3vw;
+  }
+}
 .introContent .mainContentWrapper .intoTextWrapper .mainText {
   color: white;
 }
 .introContent .mainContentWrapper .intoTextWrapper .mainText p {
   font-size: 2.25vw;
+}
+@media (max-width: 500px) {
+  .introContent .mainContentWrapper .intoTextWrapper .mainText p {
+    font-size: 3.25vw;
+  }
 }
 .mainContent {
   display: flex;
