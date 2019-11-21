@@ -84,14 +84,30 @@
     background-color: white;
     padding-top: 6%;
     padding-bottom: 6%;
+    // border: 3px solid red;
+
+    @media @mobile {
+        flex-wrap: wrap;
+    }
+
     article {
         padding-top: 6%;
         .flex-container(space-evenly, center);
         flex-direction: row;
+        // border: 3px orange solid;
+
+        @media @mobile {
+            flex-wrap: wrap;
+            padding: 0;
+        }
 
         div {
             width: 20%;
             // border: 2px red solid;
+
+            @media @mobile {
+                width: 50%;
+            }
         }
 
         p {
@@ -99,6 +115,13 @@
             width: 60%;
             font-size: 2.25vw;
             color: darkmagenta;
+
+            @media @mobile {
+                width: 60%;
+                font-size: 4.25vw;
+                padding-top: 6%;
+                padding-bottom: 6%;
+            }
         }
     }
 
