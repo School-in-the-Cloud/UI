@@ -1,0 +1,86 @@
+.aboutContent {
+    .flex-container(center,center);
+    flex-direction: column;
+
+    span {
+        color: white;
+        font-size: 1vw;
+        padding: 3%;
+    }
+
+    .aboutInfosContainer {
+        .flex-container(space-evenly, center);
+
+        .aboutPerson {
+            
+            .flex-container(center, center);
+            flex-direction: column;
+            background-color: white;
+            width: 15%;
+            border-radius: 5px;
+
+            padding-bottom: 3%;
+
+            .aboutImgContainer {
+                width: 80%;
+
+                img {
+                    min-width: 100%;
+                    border-radius: .5rem;
+                }
+            }
+
+            .nameTitle {
+                text-align: center;
+                .title {
+                    margin: 0 auto;
+                    padding: 0;
+                    font-size: 2vw;
+
+                    color: gray;
+
+                    width: min-content;
+                    white-space: nowrap;
+
+                    border-bottom: 2px gray solid;
+                }
+
+                .name {
+                    margin: 0 auto;
+                    padding: 0;
+                    font-size: 1.2rem;
+                    width: 85%;
+                    color: black;
+                }
+            }
+
+            div {
+                text-align: center;
+                
+                .aboutPara {
+                    text-align: left;
+                    padding: 5%;
+                    padding-bottom: 10%;
+                    font-size: 1rem;
+                    font-weight: 100;
+                    color: black;
+                }
+
+                a {
+                    
+                    text-decoration: none;
+                    color: black;
+                    border: 1px solid black;
+                    padding: 5px 9px;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                        border: 1px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
