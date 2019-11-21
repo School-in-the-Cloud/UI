@@ -180,7 +180,7 @@ nav {
 nav .logoAndName {
   width: 55%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 nav .logoAndName .logoImgContainer {
@@ -193,10 +193,9 @@ nav .logoAndName .logoImgContainer img {
 nav .logoAndName .nameContainer {
   width: 80%;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   color: white;
   font-size: 4vw;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 nav .links {
   display: flex;
