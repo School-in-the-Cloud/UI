@@ -34,17 +34,18 @@ nav {
 
         .nameContainer {
             // border: 2px red solid;
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             text-align: center;
             color: white;
+            font-family: @logo-font;
             // border: 2px orange solid;
             font-size: 4vw;
             // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-            
+            text-shadow: 2px 2px black;
             @media @mobile {
-                width: 90%;
-                font-size: 5vw;
+                width: 100%;
+                font-size: 4.25vw;
             }
         }
     }
@@ -52,6 +53,7 @@ nav {
     .links {
         .flex-container(space-evenly, center);
         width: 40%;
+        font-family: @main-font;
         // border: 3px red solid;
 
         @media @mobile {

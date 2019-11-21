@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Special Elite Regular'), local('SpecialElite-Regular'), url(https://fonts.gstatic.com/s/specialelite/v10/XLYgIZbkc4JPUL5CVArUVL0ntnAOTQ.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -158,6 +165,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-family: "Segoe UI";
 }
 img {
   max-width: 100%;
@@ -175,7 +183,6 @@ body {
   margin: 0 auto;
   background-color: #b1bfd8;
   background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
-  src: url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
   font-family: 'Special Elite', cursive;
 }
 @media (max-width: 500px) {
@@ -230,6 +237,7 @@ body {
   background: white;
   border-radius: 0.75rem;
   font-size: 2vw;
+  font-family: 'Special Elite', 'cursive';
   color: darkmagenta;
 }
 .introContent .mainContentWrapper .intoTextWrapper .signUp:hover {
@@ -248,6 +256,7 @@ body {
 }
 .introContent .mainContentWrapper .intoTextWrapper .mainText p {
   font-size: 2.25vw;
+  font-family: 'Special Elite', 'cursive';
 }
 @media (max-width: 500px) {
   .introContent .mainContentWrapper .intoTextWrapper .mainText p {
@@ -439,16 +448,18 @@ nav .logoAndName .logoImgContainer img {
   max-height: 100%;
 }
 nav .logoAndName .nameContainer {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   color: white;
+  font-family: 'Special Elite', 'cursive';
   font-size: 4vw;
+  text-shadow: 2px 2px black;
 }
 @media (max-width: 500px) {
   nav .logoAndName .nameContainer {
-    width: 90%;
-    font-size: 5vw;
+    width: 100%;
+    font-size: 4.25vw;
   }
 }
 nav .links {
@@ -456,6 +467,7 @@ nav .links {
   justify-content: space-evenly;
   align-items: center;
   width: 40%;
+  font-family: "Segoe UI";
 }
 @media (max-width: 500px) {
   nav .links {
