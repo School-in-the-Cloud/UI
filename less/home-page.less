@@ -13,7 +13,7 @@ nav {
         .flex-container(space-evenly, center);
         
         .logoImgContainer {
-            width: 10%;
+            width: 15%;
             img {
                 max-width:100%;
                 max-height:100%;
@@ -27,7 +27,7 @@ nav {
             text-align: left;
             color: white;
             // border: 2px orange solid;
-            font-size: 250%;
+            font-size: 4vw;
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
             
         }
@@ -38,14 +38,16 @@ nav {
         width: 40%;
         // border: 3px red solid;
         .spanLogin {
-            font-size: 1.25rem;
+            font-size: 1.5vw;
             color: white;
             text-decoration: none;
+
+            &:hover {
+                color: darkmagenta;
+            }
         }
 
-        a:hover {
-            color: blue;
-        }
+        
     }
 
     
@@ -53,31 +55,86 @@ nav {
     
 }
 
-.content {
+.introContent {
     padding: 2rem;
     .mainContentWrapper {
-        .flex-container(center, center);
+        // border: 3px solid red;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        .flex-container(space-evenly, center);
         flex-direction: row;
+
+        .imgContainer {
+            width: 50%;
+            // border: 3px solid orange;
+        }
+
         .intoTextWrapper {
+            // border: 3px solid green;
             .flex-container(center, center);
             flex-direction: column;
-
+            width: 30%;
             .signUp {
-                padding-right: 1.6rem;
-                padding-left: 1.6rem;
-                padding-top: .8rem;
-                padding-bottom: .8rem;
+                margin-top: 8%;
+                width: 30%;
+                padding-top: 2%;
+                padding-bottom: 3%;
+                text-align: center;
                 background: white;
                 border-radius: .75rem;
-                font-size: 1.25rem;
-                color: darkorchid;
+                font-size: 1.5vw;
+                // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                color: darkmagenta;
+
+                &:hover {
+                    color: white;
+                    background-color: darkmagenta;
+                }
             }
+
+        
 
             .mainText {
                 color: white;
+                p {
+                    font-size: 2vw;
+                }
             }
         }
     }
+}
+
+.mainContent {
+    .flex-container(space-between, center);
+    flex-direction: column;
+    background-color: white;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    article {
+        padding-top: 6%;
+        .flex-container(space-evenly, center);
+        flex-direction: row;
+
+        div {
+            width: 20%;
+        }
+
+        p {
+            width: 60%;
+            font-size: 1.75vw;
+            color: darkmagenta;
+        }
+    }
+
+    #oddArticle {
+        flex-direction: row-reverse;
+    }
+}
+
+nav.bottomNav {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    .flex-container(center, center);
 }
 
 hr {
@@ -87,22 +144,10 @@ hr {
 
 
 footer {
-    margin-top: 3%;
-    div {
-        padding-bottom: 3%;
-        h3 {
-            font-size: 2rem;
-            padding-bottom: 1%;
-        }
-
-        p {
-            font-size: 1.5rem;
-            padding-bottom: 0;
-        }
-    }
-
-    .copyright {
-        text-align: center;
+    color: white;
+    text-align: center;
+    p {
+        font-size: 1.2vw;
     }
 }
 
