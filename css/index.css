@@ -335,24 +335,18 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-@media (max-width: 500px) {
-  .aboutContent .aboutInfosContainer {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .aboutContent .aboutInfosContainer .aboutPerson {
-  min-width: 15%;
-  min-height: 70vh;
+  width: 15rem;
+  height: 35rem;
+  margin-left: 2%;
+  margin-top: 2%;
   background-color: white;
-  width: 15%;
   border-radius: 5px;
-}
-@media (max-width: 500px) {
-  .aboutContent .aboutInfosContainer .aboutPerson {
-    width: 40%;
-    margin-top: 4%;
-  }
 }
 .aboutContent .aboutInfosContainer .aboutPerson .aboutImgContainer {
   width: 80%;
@@ -367,7 +361,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 45vh;
+  height: max-content;
 }
 .aboutContent .aboutInfosContainer .aboutPerson .nameTitle {
   text-align: center;
@@ -395,11 +389,12 @@ body {
   text-align: left;
   padding: 5%;
   padding-bottom: 10%;
-  font-size: 1.25rem;
+  font-size: 100%;
   font-weight: 100;
   color: black;
   width: 70%;
   margin: 0 auto;
+  height: 10rem;
 }
 .aboutContent .aboutInfosContainer .aboutPerson div a {
   text-decoration: none;
@@ -421,9 +416,15 @@ body {
   width: 90%;
   padding-top: 5%;
   margin: 0 auto;
+  height: auto;
 }
 .aboutContent .aboutInfosContainer .aboutPerson div .gitDiv .imgGitContainer {
-  width: 40%;
+  width: 30%;
+  margin-top: 5%;
+}
+.aboutContent .aboutInfosContainer .aboutPerson div .gitDiv .imgGitContainer img {
+  min-width: 100%;
+  min-height: 100%;
 }
 .aboutContent .aboutInfosContainer .aboutPerson div .gitDiv a {
   display: flex;
@@ -431,6 +432,10 @@ body {
   align-items: center;
   width: 100%;
   text-align: center;
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  margin-top: 2%;
 }
 .aboutContent .aboutInfosContainer .aboutPerson div .gitDiv a span {
   color: black;

@@ -17,26 +17,32 @@
     .aboutInfosContainer {
         .flex-container(space-evenly, center);
         // border: 2px red solid;
+        flex-wrap: wrap;
 
-        @media @mobile {
-            flex-wrap: wrap;
-        }
+        width: 90%;
+
+        margin-left: 10%;
+        margin-right: 10%;
+        
 
         .aboutPerson {
             // border: 2px orange solid;
-            min-width: 15%;
-            min-height: 70vh;
+            width: 15rem;
+            height: 35rem;
+
+            margin-left: 2%;
+
+            margin-top: 2%;
 
             // .flex-container(space-between, center);
             // flex-direction: column;
             background-color: white;
-            width: 15%;
             border-radius: 5px;
 
-            @media @mobile {
-                width: 40%;
-                margin-top: 4%;       
-            }
+            // @media @mobile {
+            //     width: 40%;
+            //     margin-top: 4%;       
+            // }
 
             .aboutImgContainer {
                 width: 80%;
@@ -52,7 +58,9 @@
                 .flex-container(space-between, center);
                 flex-direction: column;
                 // border: 2px blue solid;
-                height: 45vh;
+
+                height: max-content;
+                
             }
 
             .nameTitle {
@@ -86,7 +94,7 @@
                     text-align: left;
                     padding: 5%;
                     padding-bottom: 10%;
-                    font-size: 1.25rem;
+                    font-size: 100%;
                     font-weight: 100;
                     color: black;
                     
@@ -94,7 +102,11 @@
                     
                     // padding-bottom;
                     width: 70%;
-                    margin: 0 auto; 
+                    margin: 0 auto;
+                    
+                    // border: 2px red solid;
+
+                    height: 10rem;
                 }
 
                 a {
@@ -108,6 +120,8 @@
                     border: 1px solid black;
                     padding: 5px 9px;
                     border-radius: 10px;
+
+
 
                     font-size: 1.25rem;
 
@@ -125,14 +139,31 @@
                     // border: 2px orange solid;
                     margin: 0 auto;
 
+                    height: auto;
+
                     .imgGitContainer {
-                        width: 40%;
+                        width: 30%;
+                        margin-top: 5%;
+
+                        // border: 2px red solid;
+
+                        img {
+                            min-width: 100%;
+                            min-height: 100%;
+                        }
                     }
 
                     a {
                         .flex-container(center, center);
                         width: 100%;
                         text-align: center;
+                        height: 60%;
+                        margin: 0;
+                        padding: 0;
+
+                        margin-top: 2%;
+
+                        // border: 2px black solid;
 
                         span {
                             color:black;
