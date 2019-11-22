@@ -322,7 +322,7 @@ body {
 }
 .aboutContent span {
   color: white;
-  font-size: 1vw;
+  font-size: 3vw;
   padding: 3%;
 }
 @media (max-width: 500px) {
@@ -342,14 +342,11 @@ body {
   }
 }
 .aboutContent .aboutInfosContainer .aboutPerson {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  min-width: 15%;
+  min-height: 70vh;
   background-color: white;
   width: 15%;
   border-radius: 5px;
-  padding-bottom: 3%;
 }
 @media (max-width: 500px) {
   .aboutContent .aboutInfosContainer .aboutPerson {
@@ -364,6 +361,13 @@ body {
 .aboutContent .aboutInfosContainer .aboutPerson .aboutImgContainer img {
   min-width: 100%;
   border-radius: 0.5rem;
+}
+.aboutContent .aboutInfosContainer .aboutPerson .insideContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 45vh;
 }
 .aboutContent .aboutInfosContainer .aboutPerson .nameTitle {
   text-align: center;
@@ -391,9 +395,11 @@ body {
   text-align: left;
   padding: 5%;
   padding-bottom: 10%;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 100;
   color: black;
+  width: 70%;
+  margin: 0 auto;
 }
 .aboutContent .aboutInfosContainer .aboutPerson div a {
   text-decoration: none;
@@ -404,11 +410,39 @@ body {
   border: 1px solid black;
   padding: 5px 9px;
   border-radius: 10px;
+  font-size: 1.25rem;
 }
 .aboutContent .aboutInfosContainer .aboutPerson div .emailA:hover {
   background-color: black;
   color: white;
   border: 1px solid white;
+}
+.aboutContent .aboutInfosContainer .aboutPerson div .gitDiv {
+  width: 90%;
+  padding-top: 5%;
+  margin: 0 auto;
+}
+.aboutContent .aboutInfosContainer .aboutPerson div .gitDiv .imgGitContainer {
+  width: 40%;
+}
+.aboutContent .aboutInfosContainer .aboutPerson div .gitDiv a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.aboutContent .aboutInfosContainer .aboutPerson div .gitDiv a span {
+  color: black;
+  font-size: 1vw;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .aboutContent .aboutInfosContainer .aboutPerson div .gitDiv a span {
+    font-size: 2.5vw;
+  }
 }
 nav {
   display: flex;
